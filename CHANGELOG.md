@@ -8,6 +8,7 @@
     - Status
     - Date
     - Description
+- Add validation for both Title and Description
 
 ### Changed
 
