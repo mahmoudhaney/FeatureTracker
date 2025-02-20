@@ -9,6 +9,7 @@
     - Date
     - Description
 - Add validation for both Title and Description
+- Apply workflow on the DocType `Feature Request`
 
 ### Changed
 

@@ -5,6 +5,15 @@ app_description = "App to track and manage new features."
 app_email = "mahmoudhaney25@gmail.com"
 app_license = "mit"
 
+# Fixtures
+# ------------------
+
+fixtures = [
+	{"doctype": "Workflow", "filters": {"name": ["in", ["Feature Request Workflow"]]}},
+    {"doctype": "Workflow State", "filters": {"name": ["in", ["Opened", "In Progress", "Closed"]]}},
+    {"doctype": "Workflow Action Master", "filters": {"name": ["in", ["Approve"]]}},
+]
+
 # Apps
 # ------------------
 

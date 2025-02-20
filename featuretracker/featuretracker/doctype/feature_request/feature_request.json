@@ -42,6 +42,7 @@
    "fieldname": "priority",
    "fieldtype": "Select",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Priority",
    "options": "High\nMedium\nLow",
    "reqd": 1
@@ -62,11 +63,14 @@
    "fieldtype": "Section Break"
   },
   {
-   "default": "Open",
+   "default": "Opened",
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Status",
-   "options": "Open\nIn Progress\nClosed",
+   "options": "Opened\nIn Progress\nClosed",
+   "read_only": 1,
    "reqd": 1
   },
   {
@@ -80,7 +84,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-20 06:29:23.748903",
+ "modified": "2025-02-20 07:37:48.993909",
  "modified_by": "Administrator",
  "module": "FeatureTracker",
  "name": "Feature Request",

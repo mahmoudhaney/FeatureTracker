@@ -4,6 +4,7 @@
 import frappe, featuretracker
 from frappe.model.document import Document
 import re
+from frappe.utils import today, get_date_str
 
 
 class FeatureRequest(Document):
@@ -16,6 +17,8 @@ class FeatureRequest(Document):
 			frappe.throw(featuretracker.FEATURE_TRACKER_ERRORS.get("invalid_title"))
 
 	def validate_date(self):
-		# Validate that the date is not in the past
-		if self.date < frappe.utils.today():
-			frappe.throw(featuretracker.FEATURE_TRACKER_ERRORS.get("invalid_date"))
+		# Validate that the date is today
+		# Only validate on creation
+		if self.is_new():
+			if get_date_str(self.date) != today():
+				frappe.throw(featuretracker.FEATURE_TRACKER_ERRORS.get("invalid_date"))
