@@ -11,7 +11,7 @@ def get_feature_request(name):
     return frappe.get_value(
         "Feature Request",
         name,
-        ["name", "title", "priority", "status", "date"],
+        ["name", "title", "priority", "status", "date", "description"],
         as_dict=True
     )
 

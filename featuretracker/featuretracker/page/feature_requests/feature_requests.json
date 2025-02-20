@@ -1,0 +1,24 @@
+{
+ "content": null,
+ "creation": "2025-02-20 09:36:44.971139",
+ "docstatus": 0,
+ "doctype": "Page",
+ "icon": "",
+ "idx": 0,
+ "modified": "2025-02-20 09:36:44.971139",
+ "modified_by": "Administrator",
+ "module": "FeatureTracker",
+ "name": "feature-requests",
+ "owner": "Administrator",
+ "page_name": "feature-requests",
+ "roles": [
+  {
+   "role": "All"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Feature Requests"
+}
