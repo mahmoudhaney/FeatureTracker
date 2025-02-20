@@ -1,0 +1,67 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"SzI-hEvmpI\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Feature Tracker</span>\",\"col\":12}},{\"id\":\"CPeoCpF9FE\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Feature Request\",\"col\":12}},{\"id\":\"WKP7bUQZGh\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Feature Requests Status</b></span>\",\"col\":12}},{\"id\":\"mj1F72Bpf3\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Number of Feature Requests\",\"col\":6}},{\"id\":\"1oY07DbC0E\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Opened Feature Requests\",\"col\":6}},{\"id\":\"goVVj7xRh4\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"In Progress Feature Requests\",\"col\":6}},{\"id\":\"CV_96Su0UH\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Closed Feature Requests\",\"col\":6}},{\"id\":\"wLkwFymOdU\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Feature Requests Priority</b></span>\",\"col\":12}},{\"id\":\"CjPuQoxDtE\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Low Feature Requests\",\"col\":6}},{\"id\":\"rY5MLh_1D0\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Medium Feature Requests\",\"col\":6}},{\"id\":\"f5fHVBXbx8\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"High Feature Requests\",\"col\":6}}]",
+ "creation": "2025-02-20 07:40:52.185867",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "mark-as-read",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Feature Tracker",
+ "links": [],
+ "modified": "2025-02-20 07:57:04.432653",
+ "modified_by": "Administrator",
+ "module": "FeatureTracker",
+ "name": "Feature Tracker",
+ "number_cards": [
+  {
+   "label": "Opened Feature Requests",
+   "number_card_name": "Opened Feature Requests"
+  },
+  {
+   "label": "Low Feature Requests",
+   "number_card_name": "Low Feature Requests"
+  },
+  {
+   "label": "In Progress Feature Requests",
+   "number_card_name": "In Progress Feature Requests"
+  },
+  {
+   "label": "Number of Feature Requests",
+   "number_card_name": "Number of Feature Requests"
+  },
+  {
+   "label": "Closed Feature Requests",
+   "number_card_name": "Closed Feature Requests"
+  },
+  {
+   "label": "Medium Feature Requests",
+   "number_card_name": "Medium Feature Requests"
+  },
+  {
+   "label": "High Feature Requests",
+   "number_card_name": "High Feature Requests"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Feature Request",
+   "link_to": "Feature Request",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Feature Tracker"
+}

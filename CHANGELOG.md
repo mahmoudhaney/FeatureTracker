@@ -10,6 +10,7 @@
     - Description
 - Add validation for both Title and Description
 - Apply workflow on the DocType `Feature Request`
+- Add new Workspace with some new Number Cards
 
 ### Changed
 
