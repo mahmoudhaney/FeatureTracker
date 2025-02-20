@@ -84,7 +84,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-20 07:37:48.993909",
+ "modified": "2025-02-20 08:49:42.751719",
  "modified_by": "Administrator",
  "module": "FeatureTracker",
  "name": "Feature Request",
@@ -104,8 +104,11 @@
    "write": 1
   }
  ],
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "track_changes": 1
+ "title_field": "title",
+ "track_changes": 1,
+ "translated_doctype": 1
 }

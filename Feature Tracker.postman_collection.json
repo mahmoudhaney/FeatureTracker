@@ -1,0 +1,1262 @@
+{
+	"info": {
+		"_postman_id": "96709281-f0b9-4a95-b62d-91fa9889d386",
+		"name": "Feature Tracker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23723164"
+	},
+	"item": [
+		{
+			"name": "Get Feature Requests",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 7901922ca034e3a:13ca7efed6ba744",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/api/method/featuretracker.api.feature_request.get_feature_requests",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"method",
+						"featuretracker.api.feature_request.get_feature_requests"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token 7901922ca034e3a:13ca7efed6ba744",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/method/featuretracker.api.feature_request.get_feature_requests",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"method",
+								"featuretracker.api.feature_request.get_feature_requests"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.4 Python/3.10.12"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Feb 2025 06:52:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "501"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sid=Guest; Expires=Thu, 27 Feb 2025 08:52:45 GMT; Max-Age=612000; HttpOnly; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "system_user=no; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "full_name=Guest; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_id=Guest; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_image=; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": [\n        {\n            \"name\": \"FR-2025-4\",\n            \"title\": \"Test Four\",\n            \"priority\": \"High\",\n            \"status\": \"Closed\",\n            \"date\": \"2025-02-20\"\n        },\n        {\n            \"name\": \"FR-2025-6\",\n            \"title\": \"Test One\",\n            \"priority\": \"Medium\",\n            \"status\": \"Opened\",\n            \"date\": \"2025-02-20\"\n        },\n        {\n            \"name\": \"FR-2025-5\",\n            \"title\": \"Test Five\",\n            \"priority\": \"Low\",\n            \"status\": \"In Progress\",\n            \"date\": \"2025-02-20\"\n        },\n        {\n            \"name\": \"FR-2025-3\",\n            \"title\": \"Test Three\",\n            \"priority\": \"Low\",\n            \"status\": \"Closed\",\n            \"date\": \"2025-02-20\"\n        },\n        {\n            \"name\": \"FR-2025-2\",\n            \"title\": \"Test Two\",\n            \"priority\": \"Low\",\n            \"status\": \"Closed\",\n            \"date\": \"2025-02-20\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "401 - Unauthorized",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token 13ca7efed6ba744:7901922ca034e3a",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/method/featuretracker.api.feature_request.get_feature_requests",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"method",
+								"featuretracker.api.feature_request.get_feature_requests"
+							]
+						}
+					},
+					"status": "UNAUTHORIZED",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.4 Python/3.10.12"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Feb 2025 06:53:32 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "34"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sid=Guest; Expires=Thu, 27 Feb 2025 08:53:32 GMT; Max-Age=612000; HttpOnly; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "system_user=no; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "full_name=Guest; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_id=Guest; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_image=; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sid=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_id=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "system_user=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "full_name=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_image=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"exc_type\": \"AuthenticationError\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Feature Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 7901922ca034e3a:13ca7efed6ba744",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "FR-2025-4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/method/featuretracker.api.feature_request.get_feature_requests",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"method",
+						"featuretracker.api.feature_request.get_feature_requests"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token 7901922ca034e3a:13ca7efed6ba744",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "FR-2025-4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/method/featuretracker.api.feature_request.get_feature_request",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"method",
+								"featuretracker.api.feature_request.get_feature_request"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.4 Python/3.10.12"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Feb 2025 06:59:17 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "108"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sid=Guest; Expires=Thu, 27 Feb 2025 08:59:17 GMT; Max-Age=612000; HttpOnly; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "system_user=no; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "full_name=Guest; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_id=Guest; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_image=; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": {\n        \"name\": \"FR-2025-4\",\n        \"title\": \"Test Four\",\n        \"priority\": \"High\",\n        \"status\": \"Closed\",\n        \"date\": \"2025-02-20\"\n    }\n}"
+				},
+				{
+					"name": "401 - Unauthorized",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token 13ca7efed6ba744:7901922ca034e3a",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/method/featuretracker.api.feature_request.get_feature_request",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"method",
+								"featuretracker.api.feature_request.get_feature_request"
+							]
+						}
+					},
+					"status": "UNAUTHORIZED",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.4 Python/3.10.12"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Feb 2025 06:53:32 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "34"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sid=Guest; Expires=Thu, 27 Feb 2025 08:53:32 GMT; Max-Age=612000; HttpOnly; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "system_user=no; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "full_name=Guest; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_id=Guest; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_image=; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sid=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_id=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "system_user=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "full_name=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_image=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"exc_type\": \"AuthenticationError\"\n}"
+				},
+				{
+					"name": "404 - Invalid Feature Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token 7901922ca034e3a:13ca7efed6ba744",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "FR-2025-43",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/method/featuretracker.api.feature_request.get_feature_request",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"method",
+								"featuretracker.api.feature_request.get_feature_request"
+							]
+						}
+					},
+					"status": "NOT FOUND",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.4 Python/3.10.12"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Feb 2025 07:04:23 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "32"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sid=Guest; Expires=Thu, 27 Feb 2025 09:04:23 GMT; Max-Age=612000; HttpOnly; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "system_user=no; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "full_name=Guest; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_id=Guest; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_image=; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"exc_type\": \"DoesNotExistError\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Feature Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 7901922ca034e3a:13ca7efed6ba744",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "API One",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Test API One",
+							"type": "text"
+						},
+						{
+							"key": "priority",
+							"value": "High",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/method/featuretracker.api.feature_request.create_feature_request",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"method",
+						"featuretracker.api.feature_request.create_feature_request"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token 7901922ca034e3a:13ca7efed6ba744",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "API One",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Test API One",
+									"type": "text"
+								},
+								{
+									"key": "priority",
+									"value": "High",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/method/featuretracker.api.feature_request.create_feature_request",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"method",
+								"featuretracker.api.feature_request.create_feature_request"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.4 Python/3.10.12"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Feb 2025 07:12:18 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "350"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sid=Guest; Expires=Thu, 27 Feb 2025 09:12:18 GMT; Max-Age=612000; HttpOnly; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "system_user=no; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "full_name=Guest; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_id=Guest; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_image=; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": {\n        \"name\": \"FR-2025-8\",\n        \"owner\": \"Administrator\",\n        \"creation\": \"2025-02-20 09:12:18.586306\",\n        \"modified\": \"2025-02-20 09:12:18.586306\",\n        \"modified_by\": \"Administrator\",\n        \"docstatus\": 0,\n        \"idx\": 0,\n        \"title\": \"API One\",\n        \"status\": \"Opened\",\n        \"priority\": \"High\",\n        \"date\": \"2025-02-20\",\n        \"description\": \"Test API One\",\n        \"naming_series\": \"FR-.YYYY.-.#\",\n        \"doctype\": \"Feature Request\"\n    }\n}"
+				},
+				{
+					"name": "401 - Unauthorized",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token 13ca7efed6ba744:7901922ca034e3a",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/method/featuretracker.api.feature_request.create_feature_request",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"method",
+								"featuretracker.api.feature_request.create_feature_request"
+							]
+						}
+					},
+					"status": "UNAUTHORIZED",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.4 Python/3.10.12"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Feb 2025 06:53:32 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "34"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sid=Guest; Expires=Thu, 27 Feb 2025 08:53:32 GMT; Max-Age=612000; HttpOnly; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "system_user=no; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "full_name=Guest; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_id=Guest; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_image=; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sid=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_id=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "system_user=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "full_name=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_image=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"exc_type\": \"AuthenticationError\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Feature Request",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 7901922ca034e3a:13ca7efed6ba744",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "FR-2025-8",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "API One Edited",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Test API One",
+							"type": "text"
+						},
+						{
+							"key": "priority",
+							"value": "High",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "In Progress",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/method/featuretracker.api.feature_request.update_feature_request",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"method",
+						"featuretracker.api.feature_request.update_feature_request"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token 7901922ca034e3a:13ca7efed6ba744",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "FR-2025-8",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "API One Edited",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Test API One",
+									"type": "text"
+								},
+								{
+									"key": "priority",
+									"value": "High",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "In Progress",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/method/featuretracker.api.feature_request.update_feature_request",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"method",
+								"featuretracker.api.feature_request.update_feature_request"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.4 Python/3.10.12"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Feb 2025 07:15:44 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "362"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sid=Guest; Expires=Thu, 27 Feb 2025 09:15:44 GMT; Max-Age=612000; HttpOnly; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "system_user=no; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "full_name=Guest; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_id=Guest; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_image=; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": {\n        \"name\": \"FR-2025-8\",\n        \"owner\": \"Administrator\",\n        \"creation\": \"2025-02-20 09:12:18.586306\",\n        \"modified\": \"2025-02-20 09:15:44.502889\",\n        \"modified_by\": \"Administrator\",\n        \"docstatus\": 0,\n        \"idx\": 0,\n        \"title\": \"API One Edited\",\n        \"status\": \"In Progress\",\n        \"priority\": \"High\",\n        \"date\": \"2025-02-20\",\n        \"description\": \"Test API One\",\n        \"naming_series\": \"FR-.YYYY.-.#\",\n        \"doctype\": \"Feature Request\"\n    }\n}"
+				},
+				{
+					"name": "401 - Unauthorized",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token 13ca7efed6ba744:7901922ca034e3a",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/method/featuretracker.api.feature_request.update_feature_request",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"method",
+								"featuretracker.api.feature_request.update_feature_request"
+							]
+						}
+					},
+					"status": "UNAUTHORIZED",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.4 Python/3.10.12"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Feb 2025 06:53:32 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "34"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sid=Guest; Expires=Thu, 27 Feb 2025 08:53:32 GMT; Max-Age=612000; HttpOnly; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "system_user=no; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "full_name=Guest; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_id=Guest; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_image=; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sid=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_id=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "system_user=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "full_name=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_image=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"exc_type\": \"AuthenticationError\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Feature Request Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 7901922ca034e3a:13ca7efed6ba744",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "FR-2025-4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/method/featuretracker.api.feature_request.delete_feature_request",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"method",
+						"featuretracker.api.feature_request.delete_feature_request"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token 7901922ca034e3a:13ca7efed6ba744",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "FR-2025-4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/method/featuretracker.api.feature_request.delete_feature_request",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"method",
+								"featuretracker.api.feature_request.delete_feature_request"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.4 Python/3.10.12"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Feb 2025 07:18:21 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "62"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sid=Guest; Expires=Thu, 27 Feb 2025 09:18:21 GMT; Max-Age=612000; HttpOnly; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "system_user=no; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "full_name=Guest; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_id=Guest; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_image=; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": {\n        \"message\": \"Feature request deleted successfully\"\n    }\n}"
+				},
+				{
+					"name": "401 - Unauthorized",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token 13ca7efed6ba744:7901922ca034e3a",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/method/featuretracker.api.feature_request.delete_feature_request",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"method",
+								"featuretracker.api.feature_request.delete_feature_request"
+							]
+						}
+					},
+					"status": "UNAUTHORIZED",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.4 Python/3.10.12"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Feb 2025 06:53:32 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "34"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sid=Guest; Expires=Thu, 27 Feb 2025 08:53:32 GMT; Max-Age=612000; HttpOnly; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "system_user=no; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "full_name=Guest; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_id=Guest; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_image=; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sid=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_id=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "system_user=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "full_name=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_image=; Expires=Wed, 19 Feb 2025 08:53:32 GMT; Path=/"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"exc_type\": \"AuthenticationError\"\n}"
+				},
+				{
+					"name": "404 - Invalid Feature Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token 7901922ca034e3a:13ca7efed6ba744",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "FR-2025-43",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/method/featuretracker.api.feature_request.delete_feature_request",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"method",
+								"featuretracker.api.feature_request.delete_feature_request"
+							]
+						}
+					},
+					"status": "NOT FOUND",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.4 Python/3.10.12"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Feb 2025 07:04:23 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "32"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sid=Guest; Expires=Thu, 27 Feb 2025 09:04:23 GMT; Max-Age=612000; HttpOnly; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "system_user=no; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "full_name=Guest; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_id=Guest; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "user_image=; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"exc_type\": \"DoesNotExistError\"\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://feature_tracker:8000",
+			"type": "default"
+		}
+	]
+}
