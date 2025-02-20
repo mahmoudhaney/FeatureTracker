@@ -51,16 +51,39 @@ bench --site [site-name] migrate
 bench --site [site-name] build
 ```
 
-## Uninstalling the App
+## Requirements
+1. Backend
+    - [x] Create a new Frappe application locally and name it "FeatureTracker".
+    - [x] Dene a new doctype called "Feature Request" with the following fields:
+      - [x] Title: Text eld to store the title of the feature request.
+      - [x] Description: Long text eld to provide a detailed description of the feature request.
+      - [x] Priority: Select eld with options for setting the priority of the feature request (e.g., High, Medium, Low).
+      - [x] Status: Select eld with options for the status of the feature request (e.g., Open, In Progress, Closed).
+      - [x] Date: Date eld to record the date of the feature request.
+    - [x] Implement the necessary backend logic to create, read, update, and delete feature requests.
+    - [x] Ensure the code follows good code standards and practices, including proper variable naming, indentation, and separation of concerns.
+2. Front End
+    - [x] Create a Frappe page that displays a list of feature requests.
+    - [x] The page should resemble the design provided in the attachment (attach the reference page for the candidate to follow).
+    - [x] When a feature request is clicked, show a detailed view of the feature request, including all the fields mentioned above.
+    - [x] Style the page to make it visually appealing, using appropriate CSS and design principles
+3. Extra
+   - [x] Apply a workflow on `Feature Request` DocType.
+   - [x] Using `Fixtures` for saving the workflow.
+   - [x] Creating some Number Cards
+   - [x] Creating a Workspace for Feature Requests
+   - [x] APIs:
+     - [x] Get all Feature Requests
+     - [x] Get a specific Feature Request
+     - [x] Create a new Feature Request
+     - [x] Update an existing Feature Request
+     - [x] Delete an existing Feature Request
+   - [x] Postman Collection for the APIs
+   - [x] An extra custom Page for Detailed Feature Request
+  
+## Demo
+[Screencast from 20 فبر, 2025 EET 11:26:30 ص.webm](https://github.com/user-attachments/assets/69f5af86-3eac-4ff3-8c31-78c0018fa3c8)
 
-1. Uninstall the App from the site:
+## Workspace
+![image](https://github.com/user-attachments/assets/a82d663d-6648-4cbf-a2f7-c982d9441c1e)
 
-```
-bench --site [site-name] uninstall-app featuretracker
-```
-
-2. Remove the App from the bench:
-
-```
-bench remove-app featuretracker
-```
